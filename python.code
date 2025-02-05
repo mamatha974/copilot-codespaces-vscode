@@ -1,0 +1,32 @@
+
+
+
+import random
+
+def get_fortune():
+    
+    fortunes = [
+        "You will have a great day!",
+        "Good things are coming your way!",
+        "Beware of upcoming challenges.",
+        "You will meet someone special soon!",
+        "You will have a wonderful year ahead!"
+    ]
+    
+    
+    return random.choice(fortunes)
+
+def main():
+  
+    birth_date = input("Enter your birth date (MM/DD/YYYY): ")
+    username = input("Enter your 'Under 25 App' username: ")
+    
+    
+    fortune = get_fortune()
+    
+    
+    print(f"\nHello {username}, your fortune for being born on {birth_date} is:")
+    print(fortune)
+
+if __name__ == "__main__":
+    main()
